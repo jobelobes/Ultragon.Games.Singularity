@@ -1,0 +1,180 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{F6B07CD7-3793-4E98-BE63-FCD9B1A97C4C}</ProjectGuid>
+    <RootNamespace>SingularityScripting</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>12.0.30501.0</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(SolutionDir)include\;$(SolutionDir)resources\;$(SolutionDir)include\3rdparty\;$(SolutionDir)include\3rdparty\fbx\;$(SolutionDir)include\3rdparty\lua\;$(SolutionDir)include\3rdparty\bulletphysics\;$(SolutionDir)include\3rdparty\boost\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <ObjectFileName>$(IntDir)$(ProjectName)\</ObjectFileName>
+      <ProgramDataBaseFileName>$(IntDir)$(ProjectName)\vc90.pdb</ProgramDataBaseFileName>
+      <XMLDocumentationFileName>$(IntDir)$(ProjectName)\</XMLDocumentationFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(SolutionDir)lib\$(ProjectName).lib</OutputFile>
+      <AdditionalLibraryDirectories>$(SolutionDir)lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>LIBCMT;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>$(SolutionDir)include\;$(SolutionDir)resources\;$(SolutionDir)include\3rdparty\;$(SolutionDir)include\3rdparty\fbx\;$(SolutionDir)include\3rdparty\lua\;$(SolutionDir)include\3rdparty\bulletphysics\;$(SolutionDir)include\3rdparty\boost\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <ObjectFileName>$(IntDir)$(ProjectName)\</ObjectFileName>
+      <ProgramDataBaseFileName>$(IntDir)$(ProjectName)\vc90.pdb</ProgramDataBaseFileName>
+      <XMLDocumentationFileName>$(IntDir)$(ProjectName)\</XMLDocumentationFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(SolutionDir)lib\$(ProjectName).lib</OutputFile>
+      <IgnoreSpecificDefaultLibraries>LIBCMT;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ProjectReference Include="Singularity.Audio.vcxproj">
+      <Project>{6cd170dd-26da-4a94-b27d-74fe28f3aba9}</Project>
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="Singularity.Common.vcxproj">
+      <Project>{d2e1113b-58c4-4372-9d84-3d79d04c0c66}</Project>
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="Singularity.Content.vcxproj">
+      <Project>{2cebaf1f-ec30-4c8a-9c40-bcaf05a4b672}</Project>
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="Singularity.Core.vcxproj">
+      <Project>{ecb943ca-385f-45ab-a28f-6a593e1f15d4}</Project>
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="Singularity.Graphics.vcxproj">
+      <Project>{f1cade60-2761-4404-bf7f-454394530690}</Project>
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="Singularity.Gui.vcxproj">
+      <Project>{f41dfa05-ad38-46c0-bbf5-80a5f6f30cd7}</Project>
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="Singularity.Inputs.vcxproj">
+      <Project>{ba71f569-035a-487d-8d3f-2e7699da2e4f}</Project>
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="Singularity.Networking.vcxproj">
+      <Project>{62a7d1e8-100f-4708-9ca8-9bc82628cce4}</Project>
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="Singularity.Particles.vcxproj">
+      <Project>{6b84b492-0bde-4f81-8deb-e78d242b085b}</Project>
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="Singularity.Physics.vcxproj">
+      <Project>{6715bfc6-7a12-4beb-b544-fd397899be7f}</Project>
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\scripting\LuaBehaviorDelegate.cpp" />
+    <ClCompile Include="..\src\scripting\LuaBinder.cpp" />
+    <ClCompile Include="..\src\scripting\LuaCollisionDelegate.cpp" />
+    <ClCompile Include="..\src\scripting\LuaControlDelegate.cpp" />
+    <ClCompile Include="..\src\scripting\LuaControlKeyboardDelegate.cpp" />
+    <ClCompile Include="..\src\scripting\LuaControlMouseDelegate.cpp" />
+    <ClCompile Include="..\src\scripting\LuaListBoxDelegate.cpp" />
+    <ClCompile Include="..\src\scripting\LuaNetworkDelegate.cpp" />
+    <ClCompile Include="..\src\scripting\LuaRuntime.cpp" />
+    <ClCompile Include="..\src\scripting\LuaSubtask.cpp" />
+    <ClCompile Include="..\src\scripting\LuaTask.cpp" />
+    <ClCompile Include="..\src\scripting\LuaTransformDelegate.cpp" />
+    <ClCompile Include="..\src\scripting\Scripting.Definitions.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\include\scripting\ILuaDelegate.h" />
+    <ClInclude Include="..\include\scripting\LuaBehaviorDelegate.h" />
+    <ClInclude Include="..\include\scripting\LuaBinder.h" />
+    <ClInclude Include="..\include\scripting\LuaCollisionDelegate.h" />
+    <ClInclude Include="..\include\scripting\LuaControlDelegate.h" />
+    <ClInclude Include="..\include\scripting\LuaControlKeyboardDelegate.h" />
+    <ClInclude Include="..\include\scripting\LuaControlMouseDelegate.h" />
+    <ClInclude Include="..\include\scripting\LuaListBoxDelegate.h" />
+    <ClInclude Include="..\include\scripting\LuaNetworkDelegate.h" />
+    <ClInclude Include="..\include\scripting\LuaNetworkPacket.h" />
+    <ClInclude Include="..\include\scripting\LuaRuntime.h" />
+    <ClInclude Include="..\include\scripting\LuaSubTask.h" />
+    <ClInclude Include="..\include\scripting\LuaTask.h" />
+    <ClInclude Include="..\include\scripting\LuaTransformDelegate.h" />
+    <ClInclude Include="..\include\scripting\Scripting.Definitions.h" />
+    <ClInclude Include="..\include\scripting\Singularity.Scripting.Defines.h" />
+    <ClInclude Include="..\include\scripting\Singularity.Scripting.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\include\scripting\LuaBinder.inc" />
+    <None Include="..\include\scripting\ScriptingOverrides.inc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

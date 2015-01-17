@@ -1,0 +1,21 @@
+Sound Effects
+ - XACT
+ - PlaySound(...)
+ - Physics collision sound info
+
+Data needs
+ - Player Metadata
+	- Health
+	- Weapon
+	- etc.
+ - Trap information based on location
+ - Timebased player information
+	- time since last shot
+	- time since last fire
+	- etc.
+ - Distance to ray-traced collision enemy
+ - Coords
+ 
+ Audio.PlaySound('asdf');
+ 
+ 

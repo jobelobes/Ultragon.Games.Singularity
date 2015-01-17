@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Components">
+      <UniqueIdentifier>{81483d0f-4410-4908-b840-b1edecf2329d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Components\Dynamics">
+      <UniqueIdentifier>{b0c3df1b-adac-4263-ba42-4c8e8fd55d6c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Components\Collision">
+      <UniqueIdentifier>{053b58f7-456e-4808-b66b-2da172eb2c85}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Tasks">
+      <UniqueIdentifier>{1a22f1ed-c66c-41f6-9147-0def13958389}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files\Components">
+      <UniqueIdentifier>{5d4aa705-e564-4558-b492-0b7f58089a11}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Components\Dynamics">
+      <UniqueIdentifier>{2dda2b0e-21a0-449b-92e7-b0cd79a980ae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Components\Collision">
+      <UniqueIdentifier>{202f913d-ad09-40b2-8813-f0cf0c55e594}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Tasks">
+      <UniqueIdentifier>{1a1c5bc0-b133-46f4-9c96-5fdb1ea9093f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Includes">
+      <UniqueIdentifier>{b4b07cbb-d1bb-4e93-8ee2-d735feab6439}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\physics\CollisionDispatcher.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\physics\PhysicsMotionState.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\physics\CharacterController.cpp">
+      <Filter>Source Files\Components\Dynamics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\physics\RigidBody.cpp">
+      <Filter>Source Files\Components\Dynamics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\physics\BoxCollider.cpp">
+      <Filter>Source Files\Components\Collision</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\physics\CapsuleCollider.cpp">
+      <Filter>Source Files\Components\Collision</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\physics\Collider.cpp">
+      <Filter>Source Files\Components\Collision</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\physics\CollisionDelegate.cpp">
+      <Filter>Source Files\Components\Collision</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\physics\SphereCollider.cpp">
+      <Filter>Source Files\Components\Collision</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\physics\PhysicsSubTask.cpp">
+      <Filter>Source Files\Tasks</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\physics\PhysicsTask.cpp">
+      <Filter>Source Files\Tasks</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\include\physics\CollisionDispatcher.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\physics\PhysicsMotionState.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\physics\Singularity.Physics.Defines.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\physics\Singularity.Physics.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\physics\CharacterController.h">
+      <Filter>Header Files\Components\Dynamics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\physics\RigidBody.h">
+      <Filter>Header Files\Components\Dynamics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\physics\BoxCollider.h">
+      <Filter>Header Files\Components\Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\physics\CapsuleCollider.h">
+      <Filter>Header Files\Components\Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\physics\Collider.h">
+      <Filter>Header Files\Components\Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\physics\CollisionDelegate.h">
+      <Filter>Header Files\Components\Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\physics\SphereCollider.h">
+      <Filter>Header Files\Components\Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\physics\PhysicsSubTask.h">
+      <Filter>Header Files\Tasks</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\physics\PhysicsTask.h">
+      <Filter>Header Files\Tasks</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\include\physics\BoxCollider.inc">
+      <Filter>Header Files\Includes</Filter>
+    </None>
+    <None Include="..\include\physics\CapsuleCollider.inc">
+      <Filter>Header Files\Includes</Filter>
+    </None>
+    <None Include="..\include\physics\CharacterController.inc">
+      <Filter>Header Files\Includes</Filter>
+    </None>
+    <None Include="..\include\physics\Collider.inc">
+      <Filter>Header Files\Includes</Filter>
+    </None>
+    <None Include="..\include\physics\RigidBody.inc">
+      <Filter>Header Files\Includes</Filter>
+    </None>
+    <None Include="..\include\physics\SphereCollider.inc">
+      <Filter>Header Files\Includes</Filter>
+    </None>
+  </ItemGroup>
+</Project>

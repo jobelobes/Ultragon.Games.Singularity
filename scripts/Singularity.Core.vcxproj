@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{ECB943CA-385F-45AB-A28F-6A593E1F15D4}</ProjectGuid>
+    <RootNamespace>FireboxCore</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>12.0.30501.0</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(SolutionDir)include\;$(SolutionDir)resources\;$(SolutionDir)include\3rdparty\;$(SolutionDir)include\3rdparty\fbx\;$(SolutionDir)include\3rdparty\lua\;$(SolutionDir)include\3rdparty\bulletphysics\;$(SolutionDir)include\3rdparty\boost\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <ObjectFileName>$(IntDir)$(ProjectName)\</ObjectFileName>
+      <ProgramDataBaseFileName>$(IntDir)$(ProjectName)\vc90.pdb</ProgramDataBaseFileName>
+      <XMLDocumentationFileName>$(IntDir)$(ProjectName)\</XMLDocumentationFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(SolutionDir)lib\$(ProjectName).lib</OutputFile>
+      <AdditionalLibraryDirectories>$(SolutionDir)lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>LIBCMT;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>$(SolutionDir)include\;$(SolutionDir)resources\;$(SolutionDir)include\3rdparty\;$(SolutionDir)include\3rdparty\fbx\;$(SolutionDir)include\3rdparty\lua\;$(SolutionDir)include\3rdparty\bulletphysics\;$(SolutionDir)include\3rdparty\boost\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <ObjectFileName>$(IntDir)$(ProjectName)\</ObjectFileName>
+      <ProgramDataBaseFileName>$(IntDir)$(ProjectName)\vc90.pdb</ProgramDataBaseFileName>
+      <XMLDocumentationFileName>$(IntDir)$(ProjectName)\</XMLDocumentationFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(SolutionDir)lib\$(ProjectName).lib</OutputFile>
+      <IgnoreSpecificDefaultLibraries>LIBCMT;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ProjectReference Include="Singularity.Common.vcxproj">
+      <Project>{d2e1113b-58c4-4372-9d84-3d79d04c0c66}</Project>
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="Singularity.Gui.vcxproj">
+      <Project>{f41dfa05-ad38-46c0-bbf5-80a5f6f30cd7}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="Singularity.Physics.vcxproj">
+      <Project>{6715bfc6-7a12-4beb-b544-fd397899be7f}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\core\components\Behavior.cpp" />
+    <ClCompile Include="..\src\core\components\BehaviorDelegate.cpp" />
+    <ClCompile Include="..\src\core\components\BehaviorTask.cpp" />
+    <ClCompile Include="..\src\core\components\Component.cpp" />
+    <ClCompile Include="..\src\core\components\GameObject.cpp" />
+    <ClCompile Include="..\src\core\components\Scene.cpp" />
+    <ClCompile Include="..\src\core\components\Transform.cpp" />
+    <ClCompile Include="..\src\core\components\TransformDelegate.cpp" />
+    <ClCompile Include="..\src\Core\Game.cpp" />
+    <ClCompile Include="..\src\core\GameTask.cpp" />
+    <ClCompile Include="..\src\core\Threading\Task.cpp" />
+    <ClCompile Include="..\src\core\Threading\TaskQueue.cpp" />
+    <ClCompile Include="..\src\core\Threading\TaskScheduler.cpp" />
+    <ClCompile Include="..\src\core\Threading\WorkerThread.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\include\core\BehaviorTask.h" />
+    <ClInclude Include="..\include\core\components\Behavior.h" />
+    <ClInclude Include="..\include\core\components\BehaviorDelegate.h" />
+    <ClInclude Include="..\include\core\components\Component.h" />
+    <ClInclude Include="..\include\core\components\GameObject.h" />
+    <ClInclude Include="..\include\core\components\Scene.h" />
+    <ClInclude Include="..\include\core\components\Transform.h" />
+    <ClInclude Include="..\include\core\components\TransformDelegate.h" />
+    <ClInclude Include="..\include\Core\Game.h" />
+    <ClInclude Include="..\include\core\GameTask.h" />
+    <ClInclude Include="..\include\core\Singularity.Core.Defines.h" />
+    <ClInclude Include="..\include\Core\Singularity.Core.h" />
+    <ClInclude Include="..\include\core\threading\Task.h" />
+    <ClInclude Include="..\include\core\threading\TaskQueue.h" />
+    <ClInclude Include="..\include\core\threading\TaskScheduler.h" />
+    <ClInclude Include="..\include\core\threading\WorkerThread.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\include\core\components\Component.inc" />
+    <None Include="..\include\core\components\GameObject.inc" />
+    <None Include="..\include\core\components\Transform.inc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,301 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Internals">
+      <UniqueIdentifier>{b5683305-8e78-41e8-b5b7-47f9b0f86067}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\VertexDeclaration">
+      <UniqueIdentifier>{5add4199-4848-48d7-a2c8-f98f5610af4d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Components">
+      <UniqueIdentifier>{ddd388b7-4d32-4a69-9add-2c2688dff108}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Tasks">
+      <UniqueIdentifier>{d34e9b41-c846-4b6d-b37c-ebca95685002}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Devices">
+      <UniqueIdentifier>{e17dea99-1eb4-43bf-a55d-299e59031cb1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files\Internals">
+      <UniqueIdentifier>{2dd63508-43d7-4d25-affb-7e97af7b57ae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\VertexDeclaration">
+      <UniqueIdentifier>{0d263ee5-b48d-47ac-a0b7-4ab2be191dd9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Components">
+      <UniqueIdentifier>{c4994654-bbca-45c8-8988-893e2638d515}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Tasks">
+      <UniqueIdentifier>{6c956d2e-b764-47dd-b2c0-b1015ef84272}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Devices">
+      <UniqueIdentifier>{48fe871a-061a-4753-9ef5-a9ca43a418ef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Includes">
+      <UniqueIdentifier>{a2236263-f58d-48e3-8dbd-87d5a2610b0f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\graphics\IndexBuffer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\graphics\Material.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\graphics\Mesh.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\graphics\devices\RenderState.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\graphics\RenderTexture.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\graphics\Texture2D.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\graphics\VertexBuffer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\graphics\InternalIndexBuffer.cpp">
+      <Filter>Source Files\Internals</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\graphics\InternalMaterial.cpp">
+      <Filter>Source Files\Internals</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\graphics\InternalVertexBuffer.cpp">
+      <Filter>Source Files\Internals</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\graphics\VertexDeclaration.cpp">
+      <Filter>Source Files\VertexDeclaration</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\graphics\VertexPositionColor.cpp">
+      <Filter>Source Files\VertexDeclaration</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\graphics\VertexPositionColorTexture.cpp">
+      <Filter>Source Files\VertexDeclaration</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\graphics\VertexPositionNormalTexture.cpp">
+      <Filter>Source Files\VertexDeclaration</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\graphics\VertexPositionTexture.cpp">
+      <Filter>Source Files\VertexDeclaration</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\graphics\components\Axis.cpp">
+      <Filter>Source Files\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\graphics\components\Camera.cpp">
+      <Filter>Source Files\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\graphics\components\Light.cpp">
+      <Filter>Source Files\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\graphics\components\MeshRenderer.cpp">
+      <Filter>Source Files\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\graphics\components\Renderer.cpp">
+      <Filter>Source Files\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\graphics\RenderSubTask.cpp">
+      <Filter>Source Files\Tasks</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\graphics\RenderTask.cpp">
+      <Filter>Source Files\Tasks</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\graphics\devices\BufferedDrawingContext.cpp">
+      <Filter>Source Files\Devices</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\graphics\devices\DeferredDrawingContext.cpp">
+      <Filter>Source Files\Devices</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\graphics\devices\DrawingContext.cpp">
+      <Filter>Source Files\Devices</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\graphics\devices\GraphicsDevice.cpp">
+      <Filter>Source Files\Devices</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\graphics\devices\HardwareDevice.cpp">
+      <Filter>Source Files\Devices</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\graphics\devices\Screen.cpp">
+      <Filter>Source Files\Devices</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\include\graphics\IndexBuffer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\graphics\Material.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\graphics\Mesh.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\graphics\devices\RenderState.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\graphics\RenderTexture.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\graphics\Singularity.Graphics.Defines.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\graphics\Singularity.Graphics.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\graphics\Texture2D.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\graphics\VertexBuffer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\graphics\InternalIndexBuffer.h">
+      <Filter>Header Files\Internals</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\graphics\InternalMaterial.h">
+      <Filter>Header Files\Internals</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\graphics\InternalVertexBuffer.h">
+      <Filter>Header Files\Internals</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\graphics\VertexDeclaration.h">
+      <Filter>Header Files\VertexDeclaration</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\graphics\VertexPositionColor.h">
+      <Filter>Header Files\VertexDeclaration</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\graphics\VertexPositionColorTexture.h">
+      <Filter>Header Files\VertexDeclaration</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\graphics\VertexPositionNormalTexture.h">
+      <Filter>Header Files\VertexDeclaration</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\graphics\VertexPositionTexture.h">
+      <Filter>Header Files\VertexDeclaration</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\graphics\components\Axis.h">
+      <Filter>Header Files\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\graphics\components\Camera.h">
+      <Filter>Header Files\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\graphics\components\Light.h">
+      <Filter>Header Files\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\graphics\components\MeshRenderer.h">
+      <Filter>Header Files\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\graphics\components\Renderer.h">
+      <Filter>Header Files\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\graphics\RenderSubTask.h">
+      <Filter>Header Files\Tasks</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\graphics\RenderTask.h">
+      <Filter>Header Files\Tasks</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\graphics\devices\BufferedDrawingContext.h">
+      <Filter>Header Files\Devices</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\graphics\devices\DeferredDrawingContext.h">
+      <Filter>Header Files\Devices</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\graphics\devices\DrawingContext.h">
+      <Filter>Header Files\Devices</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\graphics\devices\GraphicsDevice.h">
+      <Filter>Header Files\Devices</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\graphics\devices\HardwareDevice.h">
+      <Filter>Header Files\Devices</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\graphics\devices\Screen.h">
+      <Filter>Header Files\Devices</Filter>
+    </ClInclude>
+    <ClInclude Include="..\resources\Singularity.Graphics.Resources.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\include\graphics\components\Camera.inc">
+      <Filter>Header Files\Includes</Filter>
+    </None>
+    <None Include="..\include\graphics\components\Light.inc">
+      <Filter>Header Files\Includes</Filter>
+    </None>
+    <None Include="..\include\graphics\Material.inc">
+      <Filter>Header Files\Includes</Filter>
+    </None>
+    <None Include="..\include\graphics\Mesh.inc">
+      <Filter>Header Files\Includes</Filter>
+    </None>
+    <None Include="..\include\graphics\components\MeshRenderer.inc">
+      <Filter>Header Files\Includes</Filter>
+    </None>
+    <None Include="..\include\graphics\components\Renderer.inc">
+      <Filter>Header Files\Includes</Filter>
+    </None>
+    <None Include="..\include\graphics\Texture2D.inc">
+      <Filter>Header Files\Includes</Filter>
+    </None>
+    <None Include="..\resources\cone_indices.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\resources\cone_vertices.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\resources\cube_indices.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\resources\cube_vertices.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\resources\cylinder_indices.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\resources\cylinder_vertices.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\resources\plane_indices.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\resources\plane_vertices.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\resources\shader_basiceffect.fxo">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\resources\shader_deferredbasiceffect.fxo">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\resources\shader_deferredCombineEffect.fxo">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\resources\shader_deferredlighting.fxo">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\resources\sphere_indices.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\resources\sphere_vertices.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\resources\singularity.graphics.resources.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

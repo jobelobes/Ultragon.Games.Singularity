@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Components">
+      <UniqueIdentifier>{0d9c2f94-f9ff-451c-bb12-e6e9df314aa0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Tasks">
+      <UniqueIdentifier>{81a46b94-355c-43db-9bff-87d3f8652b44}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Adaptive">
+      <UniqueIdentifier>{712e6153-eebe-40f6-b280-222dd3569078}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files\Components">
+      <UniqueIdentifier>{3795f443-843f-40d2-a429-b8ba16627f01}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Tasks">
+      <UniqueIdentifier>{a8350c65-35eb-4a9c-ad1c-4cf154e8fb75}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Adaptive">
+      <UniqueIdentifier>{51a2210b-5eb7-43a6-b7eb-4ee69b88d2e1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\audio\AudioEngine.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\audio\AudioManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\audio\Cue.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\audio\SoundBank.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\audio\WaveBank.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\audio\AdaptiveMusicUpdater.cpp">
+      <Filter>Source Files\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\audio\AudioEmitter.cpp">
+      <Filter>Source Files\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\audio\AudioListener.cpp">
+      <Filter>Source Files\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\audio\AdaptiveAudioTask.cpp">
+      <Filter>Source Files\Tasks</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\audio\AudioExtension.cpp">
+      <Filter>Source Files\Tasks</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\audio\AdaptiveEnvironment.cpp">
+      <Filter>Source Files\Adaptive</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\audio\AdaptiveMusicManager.cpp">
+      <Filter>Source Files\Adaptive</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\audio\AdaptiveParameter.cpp">
+      <Filter>Source Files\Adaptive</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\audio\AdaptiveProperty.cpp">
+      <Filter>Source Files\Adaptive</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\audio\AdaptiveSlice.cpp">
+      <Filter>Source Files\Adaptive</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\include\audio\AudioEngine.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\audio\AudioManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\audio\Cue.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\audio\Singularity.Audio.Defines.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\audio\Singularity.Audio.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\audio\SoundBank.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\audio\WaveBank.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\audio\AdaptiveMusicUpdater.h">
+      <Filter>Header Files\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\audio\AudioEmitter.h">
+      <Filter>Header Files\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\audio\AudioListener.h">
+      <Filter>Header Files\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\audio\AdaptiveAudioTask.h">
+      <Filter>Header Files\Tasks</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\audio\AudioExtension.h">
+      <Filter>Header Files\Tasks</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\audio\AdaptiveEnvironment.h">
+      <Filter>Header Files\Adaptive</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\audio\AdaptiveMusicManager.h">
+      <Filter>Header Files\Adaptive</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\audio\AdaptiveParameter.h">
+      <Filter>Header Files\Adaptive</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\audio\AdaptiveProperty.h">
+      <Filter>Header Files\Adaptive</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\audio\AdaptiveSlice.h">
+      <Filter>Header Files\Adaptive</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

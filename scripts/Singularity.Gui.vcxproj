@@ -1,0 +1,172 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{F41DFA05-AD38-46C0-BBF5-80A5F6F30CD7}</ProjectGuid>
+    <RootNamespace>SingularityGui</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>12.0.30501.0</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(SolutionDir)include\;$(SolutionDir)resources\;$(SolutionDir)include\3rdparty\;$(SolutionDir)include\3rdparty\fbx\;$(SolutionDir)include\3rdparty\lua\;$(SolutionDir)include\3rdparty\bulletphysics\;$(SolutionDir)include\3rdparty\boost\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <ObjectFileName>$(IntDir)$(ProjectName)\</ObjectFileName>
+      <ProgramDataBaseFileName>$(IntDir)$(ProjectName)\vc90.pdb</ProgramDataBaseFileName>
+      <XMLDocumentationFileName>$(IntDir)$(ProjectName)\</XMLDocumentationFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(SolutionDir)lib\$(ProjectName).lib</OutputFile>
+      <AdditionalLibraryDirectories>$(SolutionDir)lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>LIBCMT;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>$(SolutionDir)include\;$(SolutionDir)resources\;$(SolutionDir)include\3rdparty\;$(SolutionDir)include\3rdparty\fbx\;$(SolutionDir)include\3rdparty\lua\;$(SolutionDir)include\3rdparty\bulletphysics\;$(SolutionDir)include\3rdparty\boost\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <ObjectFileName>$(IntDir)$(ProjectName)\</ObjectFileName>
+      <ProgramDataBaseFileName>$(IntDir)$(ProjectName)\vc90.pdb</ProgramDataBaseFileName>
+      <XMLDocumentationFileName>$(IntDir)$(ProjectName)\</XMLDocumentationFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(SolutionDir)lib\$(ProjectName).lib</OutputFile>
+      <IgnoreSpecificDefaultLibraries>LIBCMT;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ProjectReference Include="Singularity.Common.vcxproj">
+      <Project>{d2e1113b-58c4-4372-9d84-3d79d04c0c66}</Project>
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="Singularity.Graphics.vcxproj">
+      <Project>{f1cade60-2761-4404-bf7f-454394530690}</Project>
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="Singularity.Inputs.vcxproj">
+      <Project>{ba71f569-035a-487d-8d3f-2e7699da2e4f}</Project>
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\gui\Button.cpp" />
+    <ClCompile Include="..\src\gui\Checkbox.cpp" />
+    <ClCompile Include="..\src\gui\Control.cpp" />
+    <ClCompile Include="..\src\gui\ControlDelegate.cpp" />
+    <ClCompile Include="..\src\gui\ControlKeyboardDelegate.cpp" />
+    <ClCompile Include="..\src\gui\ControlMouseDelegate.cpp" />
+    <ClCompile Include="..\src\gui\Font.cpp" />
+    <ClCompile Include="..\src\gui\GuiControlVertexDeclaration.cpp" />
+    <ClCompile Include="..\src\gui\GuiExtension.cpp" />
+    <ClCompile Include="..\src\gui\GuiFontVertexDeclaration.cpp" />
+    <ClCompile Include="..\src\gui\GuiScreen.cpp" />
+    <ClCompile Include="..\src\gui\Image.cpp" />
+    <ClCompile Include="..\src\gui\Label.cpp" />
+    <ClCompile Include="..\src\gui\ListBox.cpp" />
+    <ClCompile Include="..\src\gui\ListBoxDelegate.cpp" />
+    <ClCompile Include="..\src\gui\ListBoxElement.cpp" />
+    <ClCompile Include="..\src\gui\ListPanel.cpp" />
+    <ClCompile Include="..\src\gui\NinePatch.cpp" />
+    <ClCompile Include="..\src\gui\Panel.cpp" />
+    <ClCompile Include="..\src\gui\TextBox.cpp" />
+    <ClCompile Include="..\src\gui\TextControl.cpp" />
+    <ClCompile Include="..\src\gui\Window.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\include\gui\Button.h" />
+    <ClInclude Include="..\include\gui\Checkbox.h" />
+    <ClInclude Include="..\include\gui\Control.h" />
+    <ClInclude Include="..\include\gui\ControlDelegate.h" />
+    <ClInclude Include="..\include\gui\ControlKeyboardDelegate.h" />
+    <ClInclude Include="..\include\gui\ControlMouseDelegate.h" />
+    <ClInclude Include="..\include\gui\Font.h" />
+    <ClInclude Include="..\include\gui\GuiControlVertexDeclaration.h" />
+    <ClInclude Include="..\include\gui\GuiExtension.h" />
+    <ClInclude Include="..\include\gui\GuiFontVertexDeclaration.h" />
+    <ClInclude Include="..\include\gui\GuiScreen.h" />
+    <ClInclude Include="..\include\gui\Image.h" />
+    <ClInclude Include="..\include\gui\Label.h" />
+    <ClInclude Include="..\include\gui\ListBox.h" />
+    <ClInclude Include="..\include\gui\ListboxDelegate.h" />
+    <ClInclude Include="..\include\gui\ListBoxElement.h" />
+    <ClInclude Include="..\include\gui\ListPanel.h" />
+    <ClInclude Include="..\include\gui\NinePatch.h" />
+    <ClInclude Include="..\include\gui\Panel.h" />
+    <ClInclude Include="..\include\gui\Singularity.Gui.Defines.h" />
+    <ClInclude Include="..\include\gui\Singularity.Gui.h" />
+    <ClInclude Include="..\include\gui\TextBox.h" />
+    <ClInclude Include="..\include\gui\TextControl.h" />
+    <ClInclude Include="..\include\gui\Window.h" />
+    <ClInclude Include="..\resources\Singularity.Gui.Resources.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\include\gui\Checkbox.inc" />
+    <None Include="..\include\gui\Control.inc" />
+    <None Include="..\include\gui\Font.inc" />
+    <None Include="..\include\gui\GuiScreen.inc" />
+    <None Include="..\include\gui\InputControl.inc" />
+    <None Include="..\include\gui\NinePatch.inc" />
+    <None Include="..\include\gui\Window.inc" />
+    <None Include="..\resources\shader_fonteffect.fxo" />
+    <None Include="..\resources\shader_guieffect.fxo" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\resources\singularity.gui.resources.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

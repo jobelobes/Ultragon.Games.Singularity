@@ -1,0 +1,223 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Controls">
+      <UniqueIdentifier>{835458e2-1b56-44b1-b12c-66d729d53ba3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Extensions">
+      <UniqueIdentifier>{552323f2-e236-4505-9399-7bc76cc0762d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Components">
+      <UniqueIdentifier>{5a9761a8-2582-496e-b016-286ec57c18ec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\VertexDeclarations">
+      <UniqueIdentifier>{6e9d7887-f350-4708-8f50-9c38e58750d4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files\Controls">
+      <UniqueIdentifier>{93913e9d-af56-4c3f-b4cf-45b6bc6c0380}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Extensions">
+      <UniqueIdentifier>{e7a18a34-4d87-4e24-9582-3d07e56d4d82}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\VertexDeclarations">
+      <UniqueIdentifier>{c8da4bb7-eadc-4caa-a6e4-8bd9fdceeafd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Components">
+      <UniqueIdentifier>{a6944346-7ec8-4f4a-8b0d-0f69ca293e16}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Includes">
+      <UniqueIdentifier>{aa901ee0-6492-477d-a638-f0a8b34ee245}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\gui\Font.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\gui\NinePatch.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\gui\Button.cpp">
+      <Filter>Source Files\Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\gui\Checkbox.cpp">
+      <Filter>Source Files\Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\gui\Control.cpp">
+      <Filter>Source Files\Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\gui\ControlDelegate.cpp">
+      <Filter>Source Files\Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\gui\ControlKeyboardDelegate.cpp">
+      <Filter>Source Files\Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\gui\ControlMouseDelegate.cpp">
+      <Filter>Source Files\Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\gui\Image.cpp">
+      <Filter>Source Files\Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\gui\Label.cpp">
+      <Filter>Source Files\Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\gui\ListBox.cpp">
+      <Filter>Source Files\Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\gui\ListBoxDelegate.cpp">
+      <Filter>Source Files\Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\gui\ListBoxElement.cpp">
+      <Filter>Source Files\Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\gui\ListPanel.cpp">
+      <Filter>Source Files\Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\gui\Panel.cpp">
+      <Filter>Source Files\Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\gui\TextBox.cpp">
+      <Filter>Source Files\Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\gui\TextControl.cpp">
+      <Filter>Source Files\Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\gui\Window.cpp">
+      <Filter>Source Files\Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\gui\GuiExtension.cpp">
+      <Filter>Source Files\Extensions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\gui\GuiScreen.cpp">
+      <Filter>Source Files\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\gui\GuiControlVertexDeclaration.cpp">
+      <Filter>Source Files\VertexDeclarations</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\gui\GuiFontVertexDeclaration.cpp">
+      <Filter>Source Files\VertexDeclarations</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\include\gui\Font.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\gui\NinePatch.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\gui\Singularity.Gui.Defines.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\gui\Singularity.Gui.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\gui\Button.h">
+      <Filter>Header Files\Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\gui\Checkbox.h">
+      <Filter>Header Files\Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\gui\Control.h">
+      <Filter>Header Files\Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\gui\ControlDelegate.h">
+      <Filter>Header Files\Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\gui\ControlKeyboardDelegate.h">
+      <Filter>Header Files\Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\gui\ControlMouseDelegate.h">
+      <Filter>Header Files\Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\gui\Image.h">
+      <Filter>Header Files\Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\gui\Label.h">
+      <Filter>Header Files\Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\gui\ListBox.h">
+      <Filter>Header Files\Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\gui\ListboxDelegate.h">
+      <Filter>Header Files\Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\gui\ListBoxElement.h">
+      <Filter>Header Files\Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\gui\ListPanel.h">
+      <Filter>Header Files\Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\gui\Panel.h">
+      <Filter>Header Files\Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\gui\TextBox.h">
+      <Filter>Header Files\Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\gui\TextControl.h">
+      <Filter>Header Files\Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\gui\Window.h">
+      <Filter>Header Files\Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\gui\GuiExtension.h">
+      <Filter>Header Files\Extensions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\gui\GuiControlVertexDeclaration.h">
+      <Filter>Header Files\VertexDeclarations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\gui\GuiFontVertexDeclaration.h">
+      <Filter>Header Files\VertexDeclarations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\gui\GuiScreen.h">
+      <Filter>Header Files\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\resources\Singularity.Gui.Resources.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\include\gui\Checkbox.inc">
+      <Filter>Header Files\Includes</Filter>
+    </None>
+    <None Include="..\include\gui\Control.inc">
+      <Filter>Header Files\Includes</Filter>
+    </None>
+    <None Include="..\include\gui\Font.inc">
+      <Filter>Header Files\Includes</Filter>
+    </None>
+    <None Include="..\include\gui\GuiScreen.inc">
+      <Filter>Header Files\Includes</Filter>
+    </None>
+    <None Include="..\include\gui\InputControl.inc">
+      <Filter>Header Files\Includes</Filter>
+    </None>
+    <None Include="..\include\gui\NinePatch.inc">
+      <Filter>Header Files\Includes</Filter>
+    </None>
+    <None Include="..\include\gui\Window.inc">
+      <Filter>Header Files\Includes</Filter>
+    </None>
+    <None Include="..\resources\shader_fonteffect.fxo">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\resources\shader_guieffect.fxo">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\resources\singularity.gui.resources.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>
